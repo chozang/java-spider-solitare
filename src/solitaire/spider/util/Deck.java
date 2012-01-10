@@ -37,7 +37,7 @@ public class Deck {
 		clubs.clear();
 		clubs.addAll(shuffledDeck);
 		selected = randomCardSelector.nextInt(4);
-		ShuffleDeck();
+		shuffleDeck();
 		printDeck();
 	}
 
@@ -87,7 +87,7 @@ public class Deck {
 		}
 	}
 	
-	private void ShuffleDeck(){
+	private void shuffleDeck(){
 		shuffledDeck.clear();
 		System.out.println(hearts.size() + " hearts");
 		while(!hearts.isEmpty() || !spades.isEmpty() || !clubs.isEmpty() || !diamonds.isEmpty()){
